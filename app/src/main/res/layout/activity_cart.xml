@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/parentlayout_cart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/back_imageCart"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="10.89dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/back"
+                android:backgroundTint="@color/black" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tx_productDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="88.71dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/cart"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/">
+
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

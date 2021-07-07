@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Activity.FirstActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/welcome_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sentence_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_below="@id/welcome_textView"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:lines="5"
+        android:text="@string/Lorem_pragraph"
+        android:textColor="#707070"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/choose_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sentence_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/choose_language"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spinerLanguage_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_language"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="132dp">
+
+        <Spinner
+            android:id="@+id/language_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

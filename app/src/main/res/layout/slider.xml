@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/first_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUITS COLLECTION SALE"
+        android:textColor="#FF0235"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        />
+    <TextView
+        android:id="@+id/second_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLAT 20% OFFER"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/first_tx"
+        />
+    <TextView
+        android:id="@+id/third_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUITS COLLECTION SALE"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/second_tx"
+        />
+
+    <Button
+        android:id="@+id/bt_sale"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginRight="35dp"
+        android:layout_toEndOf="@+id/second_tx"
+        android:backgroundTint="@color/red"
+        android:text="Shop Now"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+
+</RelativeLayout>

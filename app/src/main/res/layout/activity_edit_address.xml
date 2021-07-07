@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context="Activity.EditAddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/back_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="10.89dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="36dp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/add_new_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_address"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:layout_marginLeft="88.71dp"
+            android:layout_marginTop="34dp"
+            android:textSize="16dp"
+            />
+        <RelativeLayout
+            android:id="@+id/full_address_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/add_new_address">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/address_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/add_new_address"
+                    android:textSize="16dp"
+                    android:padding="15dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/area_cardView"
+                android:layout_below="@+id/address_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/area"
+                    android:textSize="16dp"
+                    android:padding="15dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/block_street"
+                android:layout_below="@+id/area_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:elevation="7dp"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:fontFamily="@font/roboto_light"
+                        android:hint="@string/block"
+                        android:inputType="textShortMessage"
+                        android:lines="1"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070"
+                        android:textSize="16dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:elevation="7dp"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:hint="@string/street"
+                        android:fontFamily="@font/roboto_light"
+                        android:inputType="textShortMessage"
+                        android:textSize="16dp"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/block_street"
+                android:id="@+id/building_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:elevation="7dp"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:hint="@string/building"
+                        android:inputType="textShortMessage"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="16dp"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:elevation="7dp"
+                    app:cardCornerRadius="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:hint="@string/floor"
+                        android:fontFamily="@font/roboto_light"
+                        android:inputType="textShortMessage"
+                        android:textSize="16dp"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#707070" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/city_cardView"
+                android:layout_below="@+id/building_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/city"
+                    android:textSize="16dp"
+                    android:padding="15dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/province_cardView"
+                android:layout_below="@+id/city_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/province"
+                    android:padding="15dp"
+                    android:textSize="16dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Postal_cardView"
+                android:layout_below="@+id/province_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/postal"
+                    android:padding="15dp"
+                    android:textSize="16dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/country_cardView"
+                android:layout_below="@+id/Postal_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="7dp"
+                app:cardCornerRadius="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/country"
+                    android:padding="15dp"
+                    android:textSize="16dp"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/full_address_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/buttom"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/add_address"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

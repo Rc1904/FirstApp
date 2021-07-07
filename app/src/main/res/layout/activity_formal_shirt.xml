@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FormalShirtActivity">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/back_imageFormalShirt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="10.89dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/black"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tx_formalShirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/formalshirt"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:layout_marginLeft="88.71dp"
+            android:layout_marginTop="34dp"
+            android:textSize="16dp"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bag"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:layout_toRightOf="@id/tx_formalShirt"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_productType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Type"
+        android:layout_below="@+id/parent_layout"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/parent_layout"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/tx_productType"
+        android:background="@drawable/filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_formalShirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_productType"
+        android:layout_marginTop="20dp"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

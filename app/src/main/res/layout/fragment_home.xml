@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/ind_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tx_hotList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ind_dots"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Hot List"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_menTee"
+        android:layout_width="172dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/tx_hotList"
+        >
+    <ImageView
+        android:id="@+id/img_menTee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/man2" />
+
+        <TextView
+            android:id="@+id/tx_menTee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men's Tee"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_below="@id/tx_hotList"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_menJackets"
+        android:layout_width="172dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_toRightOf="@+id/card_menTee"
+        android:layout_below="@+id/tx_hotList"
+
+        >
+        <ImageView
+            android:id="@+id/img_menJackets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/men1" />
+        <TextView
+            android:id="@+id/tx_menJackets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men's Jacket"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_winterCollection"
+        android:layout_width="172dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_toRightOf="@+id/card_menTee"
+        android:layout_below="@+id/card_menJackets"
+
+        >
+        <ImageView
+            android:id="@+id/img_winterCollection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/woman" />
+        <TextView
+            android:id="@+id/tx_winterCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winter Collection"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tx_newArrivals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_menTee"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="New Arrivals"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/img_sideArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/card_menTee"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tx_newArrivals"
+        android:background="@drawable/sidearrow"
+        android:scaleType="centerCrop"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_newArrivals">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+</RelativeLayout>

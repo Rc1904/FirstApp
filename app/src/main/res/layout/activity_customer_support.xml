@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAFAFA"
+    tools:context="Activity.ForgotPasswordActivity">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/back_customerSupport"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="10.89dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/back" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/customerSupport"
+            android:textColor="@color/black"
+
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/full_address_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/parent_layout">
+
+        <TextView
+            android:id="@+id/sendUs_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_us_a_message"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/name_cardView"
+            android:layout_below="@+id/sendUs_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:hint="@string/name"
+                android:inputType="textShortMessage"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#707070"
+                android:textSize="16dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emailAddress_cardView"
+            android:layout_below="@+id/name_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/et_emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#707070"
+                android:textSize="16dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/phoneNumber_cardView"
+            android:layout_below="@+id/emailAddress_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="18dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/et_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:hint="@string/phone_number"
+                android:textSize="16dp"
+                android:padding="15dp"
+                android:inputType="textShortMessage"
+                android:textColor="@color/black"
+                android:textColorHint="#707070" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/otherInstructions_cardView"
+            android:layout_below="@+id/phoneNumber_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="18dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:id="@+id/et_otherInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:hint="@string/other_instructions"
+                android:paddingTop="10dp"
+                android:textSize="16dp"
+                android:paddingLeft="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="#707070" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_below="@+id/full_address_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttom"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/send"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

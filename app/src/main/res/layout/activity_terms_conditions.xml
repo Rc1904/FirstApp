@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.TermsConditionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/back_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+                <ImageView
+                    android:layout_width="10.89dp"
+                    android:layout_height="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="36dp"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/terms_conditions"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:layout_marginLeft="88.71dp"
+                android:layout_marginTop="34dp"
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/termsFirst_textView"
+            android:layout_below="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/termFirst_paragraph"
+            android:lines="6"
+            android:textColor="#909090"
+            android:textSize="14dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <TextView
+            android:id="@+id/termsSecond_textView"
+            android:layout_below="@+id/termsFirst_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/termFirst_paragraph"
+            android:lines="6"
+            android:textColor="#909090"
+            android:textSize="14dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <TextView
+            android:id="@+id/termsThird_textView"
+            android:layout_below="@+id/termsSecond_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/termFirst_paragraph"
+            android:lines="6"
+            android:textColor="#909090"
+            android:textSize="14dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

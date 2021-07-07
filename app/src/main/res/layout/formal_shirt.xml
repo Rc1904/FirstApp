@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_formalShirt"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/img_formalShirt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tx_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_formalShirt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="product name"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tx_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tx_productName"
+        android:layout_marginTop="2dp"
+        android:text="10.000 KWD"
+        android:textColor="#707070"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Navagition App</string>
+
+    <string name="open">Open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="setting_blank_fragment">Setting blank fragment</string>
+    <string name="categories_blank_fragment">Categories blank fragment</string>
+
+
+    <string name="email_address">Email Address</string>
+    <string name="log_in">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="forget_password2">Forget Password</string>
+    <string name="login_account">Login to my account</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="register_now"><u>Register now</u></string>
+    <string name="skip">skip</string>
+    <string name="register">Register</string>
+    <string name="send_password">Send Password</string>
+    <string name="customerSupport">Customer Support</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="add_new_address">Add New Address<font fgcolor='#D71E3D'>*</font></string>
+    <string name="area">Area<font fgcolor='#D71E3D'>*</font></string>
+    <string name="block">Block</string>
+    <string name="street">Street Number</string>
+    <string name="building">Building Number</string>
+    <string name="floor">Floor Number</string>
+    <string name="city">City</string>
+    <string name="province">Province</string>
+    <string name="postal">Postal Code</string>
+    <string name="country">Country</string>
+    <string name="add_address">Add Address</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="by_signing_up">By signing up you agree with our </string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions </u></string>
+    <string name="or">OR</string>
+    <string name="signup_social">Sign up with social media</string>
+    <string name="already_account">Already have an account</string>
+    <string name="sign_in_now"><u>Sign in now</u></string>
+    <string name="send_us_a_message">Send Us a Message</string>
+    <string name="name">Name</string>
+    <string name="other_instructions">Other Instructions</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="old_password">Old Password<font fgcolor='#D71E3D'>*</font></string>
+    <string name="new_password">New Password<font fgcolor='#D71E3D'>*</font></string>
+    <string name="confirm_password">Confirm Password<font fgcolor='#D71E3D'>*</font></string>
+    <string name="send">Send</string>
+    <string name="formalshirt">Formal Shirt</string>
+    <string name="productdetails">Product Details</string>
+    <string name="cart">Cart</string>
+    <string name="reviewsWord">Lorem ipsum dolor sit amet, consectetur \n adipiscing elit, sed do eiusmod tempor incididunt</string>
+
+    <string name="termFirst_paragraph">Lorem Ipsum is simply dummy text of the \n printing and typesetting industry. Lorem Ipsum \n has been the industry’s standard dummy text \n ever since the 1500s, when an unknown printer \n took a galley of type and scrambled it to make a \n type specimen book.</string>
+    <string name="data_forgot_password">Enter the email address you used to \n create your account and we will email \n you a link to reset your password</string>
+    <string name="Lorem_pragraph">Lorem ipsum dolor sit amet,\n sadipscing elitr, nonumy eirmod invidunt \n ut labore et dolore magna aquyam erat, \n sed diam voluptua. At vert accusam et \n justo duo dolores et ea rebum</string>
+
+</resources>
